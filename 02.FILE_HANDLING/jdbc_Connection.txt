@@ -1,0 +1,54 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import java.sql.Statement;
+
+public class EmployeeInsert {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+//		1.Load driver -
+//		it is use for load the file(here we use MySql) by using static method forName() is present in class Class
+//		forName is static method so we access it by using class name.
+		
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+//		2.Establish connection - 
+//		Connection is a interface we can't creat obj. so here use DriverManager as helper class
+//		in DriverManager class there is present getConnection() is a static overload method(its return type is connection)
+//		getConnection is a Static method so we access it by using class(DriverManager.getConnection)
+//		getConnection(String url,String username,String pass)	
+		
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_wejm5","root","MyNewPass");
+		
+//		3.Create statement-
+//		Statement is a interface we can't creat obj. for it.
+//		with the help of creatStatement() we can creat obj.for Statement method present in Connection
+	    
+		Statement stmt =  con.createStatement();
+		
+//		4.Execute statement-
+//		It is use of execute the query with help of creatStatement()
+//		here 3 mothods for execute the query 
+//		1.execute()-use for all statement (return type-booleans)
+//		2.executeUpdate() - use for only DDL statement (return type-int)
+//		3.executeQuery() - use for only DQL statement (return type-ResultSet)
+//		here we used 3rd statement
+		
+		ResultSet rs = stmt.executeQuery("select * from student");
+		
+		while(rs.next()) {
+			System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3)+" "+rs.getString(4));
+		}
+		
+//		5.Close() - 
+//		close() method used for termination of Connection
+		
+		con.close();
+	}
+	
+
+	
+}

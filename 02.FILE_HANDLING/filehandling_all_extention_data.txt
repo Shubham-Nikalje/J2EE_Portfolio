@@ -1,0 +1,33 @@
+image extension
+1] .jpg extension - 1.file is created  2.file access successfully.
+2] .png extension - 1.file is created  2.file access successfully.
+3] .gif extension - 1.file is created  2.file access successfully.
+4] .webp extension - 1.file is created  2.file access successfully.
+5] .tiff extension - 1.file is created  2.file access successfully.
+6] .psd extension - 1.file is created  2.file access successfully.
+
+pdf
+7] .pdf extension - 1.file is created  2.file access not access.
+
+Excel
+8] .xlsx extension - 1.file is created  2.file access successfully.
+9] .xlsm extension - 1.file is created  2.file access successfully.
+10] .xls extension - 1.file is created  2.file access successfully.
+11] .xltx extension - 1.file is created  2.file access successfully.
+
+Word
+12] .doc extension - 1.file is created  2.file access successfully.
+13] .dot extension - 1.file is created  2.file access successfully.
+14] .dotx extension - 1.file is created  2.file access successfully.
+15] .docx extension - 1.file is created  2.file access successfully..
+
+ppt
+16] .ppt extension - 1.file is created  2.file access successfully.
+
+Video
+17] .avi extension - 1.file is created  2.file access successfully.
+18] .mp4 extension - 1.file is created  2.file is access not access.
+19] .mpg extension - 1.file is created  2.file access successfully.
+
+
+
