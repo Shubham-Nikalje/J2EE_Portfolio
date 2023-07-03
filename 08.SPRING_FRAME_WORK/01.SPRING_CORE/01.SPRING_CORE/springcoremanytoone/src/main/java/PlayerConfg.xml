@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 	
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> 
+	
+<bean class="com.jspider.springcoremanytoone.beans.PlayerBean" name="player1">
+<property name="id" value="1" />
+<property name="name"  value="virat" />
+<property name="age" value="30" />
+<property name="team" ref="team" />
+</bean>	
+<bean class="com.jspider.springcoremanytoone.beans.PlayerBean" name="player2">
+<property name="id" value="2" />
+<property name="name"  value="rohit" />
+<property name="age" value="35" />
+<property name="team" ref="team" />
+</bean>	
+<bean class="com.jspider.springcoremanytoone.beans.PlayerBean" name="player3">
+<property name="id" value="3" />
+<property name="name"  value="dhoni" />
+<property name="age" value="39" />
+<property name="team" ref="team" />
+</bean>	
+<bean class="com.jspider.springcoremanytoone.beans.TeamBean" name="team">
+<property name="id" value="1" />
+<property name="name"  value="India" />
+</bean>	
+</beans>
